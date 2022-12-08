@@ -9,6 +9,7 @@ header, footer{
 }
 aside{
     background-color: #E0DEF4;
+    text-align: center;
 }
 img{
     opacity: 50%;
@@ -16,4 +17,55 @@ img{
 span{
     font-family: 'Send Flowers', cursive;
     font-weight: bold;
+}
+.navigation ul{
+    list-style-type: none;
+}
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    width: 100%;
+    justify-items: center;
+    text-align: center;
+}
+.flex-con{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-rows: auto;
+    margin-bottom: 10px;
+}
+.images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (min-width: 640px){
+    .grid-container{
+        grid-template-columns: 1fr 1fr 200px;
+    }
+    .images{
+        display: flex;
+        justify-content: space-around;
+    }
+    .aside{
+        grid-column: 4/-1;
+    }
 }
