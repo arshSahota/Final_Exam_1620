@@ -79,3 +79,7 @@ header{
         justify-content: space-between;
     }
 }
+/*Javascript functions classes*/
+.imgop{
+    opacity: 1;
+}
