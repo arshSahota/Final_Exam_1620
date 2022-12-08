@@ -1,0 +1,19 @@
+html{
+    font-family: 'RocknRoll One', sans-serif;
+    background-color: #9CCFD8;
+    color: #59546D
+}
+header, footer{
+    background-color: #31748F;
+    color: white;
+}
+aside{
+    background-color: #E0DEF4;
+}
+img{
+    opacity: 50%;
+}
+span{
+    font-family: 'Send Flowers', cursive;
+    font-weight: bold;
+}
