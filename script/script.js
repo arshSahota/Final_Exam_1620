@@ -4,18 +4,18 @@ const cart = document.querySelector(".cartitems")
 const text = document.querySelector("h2")
 
 let increaseOpacity = (e)=>{
-    e.target.classList.add("imgop")
+    e.target.classList.add("imgop");
 }
 
 let makeTransparent = (e) =>{
-    e.target.classList.remove("imgop")
+    e.target.classList.remove("imgop");
 }
 
 let addToCart = (e)=>{
     for(let album in albums){
     if(e.target.textContent = albums[album].name){
-        let album_name = albums[album].name
-        let price_album = albums[album].price
+        let album_name = albums[album].name;
+        let price_album = albums[album].price;
         span_element = document.createElement("span")
         span_element.textContent=album_name;
         span_price = document.createElement("span")
@@ -23,9 +23,16 @@ let addToCart = (e)=>{
         cart.appendChild(span_element)
         cart.appendChild(span_price)
         changeProperty();
+
         albums[album].addedToCart = true;
     }
 }
+}
+
+let checkitem=(e)=>{
+    if(cart.textContent.includes(e.target.textContent)){
+        alert("Your item has been added successfully!!")
+    }
 }
 
 let changeProperty = (e)=>{

@@ -58,6 +58,11 @@ header{
     align-items: center;
     justify-content: center;
 }
+.cartitems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 @media screen and (min-width: 640px){
     .navigation{
         list-style-type: none;
@@ -82,9 +87,4 @@ header{
 /*Javascript functions classes*/
 .imgop{
     opacity: 1;
-}
-.cartitems{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
