@@ -23,18 +23,13 @@ let addToCart = (e)=>{
         cart.appendChild(span_element)
         cart.appendChild(span_price)
         changeProperty();
+        albums[album].addedToCart = true;
     }
 }
-    // span_element = document.createElement("span")
-    // span_element.textContent=album_name;
-    // span_price = document.createElement("span")
-    // span_price.textContent = price_album;
-    // cart.appendChild(span_element)
-    // cart.appendChild(span_price)
 }
 
 let changeProperty = (e)=>{
-    h2.textContent = "Added to Cart"
+    text.textContent = "Added to Cart"
 }
 let albums = [{ name: "Album 1", price: 12.99, addedToCart: false },
 { name: "Album 2", price: 14.99, addedToCart: false}, 

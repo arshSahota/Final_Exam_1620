@@ -83,3 +83,8 @@ header{
 .imgop{
     opacity: 1;
 }
+.cartitems{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
